@@ -1,0 +1,20 @@
+### 程序修改日志
+
+用英语记录更好
+
+- 配置了什么？
+  1. LED
+  2. USART
+
+- 错误记录
+  1. 2018.11.1 LED 输出模式选择成 GPIO_Mode_AF_OD 如果是 
+     GPIO_Mode_Out_OD or GPIO_Mode_Out_PP 都可以成功 
+  2. USART3 错误的写成 USART2
+  
+- 调试现象
+  1. USART1 收到 0X02 对应 LED(GPIOB,GPIO_Pin_0) 闪烁
+  2. USART3 收到 0X01 对应 LED(GPIOA,GPIO_Pin_2) 闪烁
+- 修改日志
+  1. 2018.11.2 王春修改了USART LED 实验成功
+
+### 每次修改后来此添加内容
